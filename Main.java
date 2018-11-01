@@ -40,6 +40,24 @@ public class Main {
                     default: System.out.println("Error: invalid input");
             }
         } while (false);            // ----- needs to be changed -> placeholder -----
+
+        public static void evaluation() {
+            Scanner evaluate = new Scanner(System.in);
+            System.out.println("What is your age?");
+                int age = evaluate.nextInt();
+            System.out.println("What is your current weight? (in lbs)");
+                int weight = evaluate.nextInt();
+            System.out.println("How many hours of activity do you participate in weekly?");
+                int actHours = evaluate.nextInt();
+            System.out.println("Are you disabled?");
+
+                boolean disabled = evaluate.nextBoolean();              //(make it so yes == true?)
+            System.out.println("");
+        }
+
     }
+
+
+}
 
 }
