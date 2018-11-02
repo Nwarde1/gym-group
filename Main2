@@ -1,0 +1,49 @@
+@@ -0,0 +1,48 @@
+package com.company;
+import java.util.*;
+
+public class Main {
+    public static void main(String args[])
+    {
+        Member Nick = new Member();
+        Scanner userIn = new Scanner(System.in);
+        System.out.print("Please Enter Your Name: ");
+        Nick.set_Name(userIn.nextLine());
+        Nick.set_ID(30);
+        Nick.checkIn();
+        adTime();
+        Nick.display_Info();
+
+
+
+
+    }
+    public static void adTime()
+    {
+        Random ranAD = new Random();
+        int ran = ranAD.nextInt(6)+1;
+
+        switch (ran)
+        {
+            case 1:
+                System.out.println("Ad 1");
+                break;
+            case 2:
+                System.out.println("Ad 2");
+                break;
+            case 3:
+                System.out.println("Ad 3");
+                break;
+            case 4:
+                System.out.println("Ad 4");
+                break;
+            case 5:
+                System.out.println("Ad 5");
+                break;
+            case 6:
+                System.out.println("Ad 6");
+                break;
+
+        }
+    }
+}
