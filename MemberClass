@@ -1,0 +1,51 @@
+@@ -0,0 +1,50 @@
+package com.company;
+import java.util.*;
+
+public class Member {
+
+    private String NAME;
+    private int MEMBER_ID;
+    private int CHECK_IN = 0;
+
+    public void set_Name(String mName)
+    {
+        NAME = mName;
+    }
+
+    public void set_ID(int mID)
+    {
+        MEMBER_ID = mID;
+    }
+
+    public void checkIn()
+    {
+        CHECK_IN++;
+    }
+
+    public String get_Name()
+    {
+        return NAME;
+    }
+
+    public int get_ID()
+    {
+        return MEMBER_ID;
+    }
+
+    public int checkCIN()
+    {
+        return CHECK_IN;
+    }
+
+    public void newMonth()
+    {
+        CHECK_IN = 0;
+    }
+
+    public void display_Info()
+    {
+        System.out.printf("Name : %s%n Member ID : %d%n Number of times checked in this month: %d", NAME, MEMBER_ID, CHECK_IN);
+    }
+
+}
